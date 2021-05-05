@@ -10,14 +10,11 @@
       <ion-avatar slot="start">
         <img [src]="site.images[0]" >
       </ion-avatar>
-
       <ion-label text-wrap>
         <h3>{{ site.title }}</h3>
         {{ site.address.street }}, {{ site.address.city }}, {{ site.address.state }}, {{ site.address.country }}, {{ site.address.zipCode }}
       </ion-label>
-
     </ion-item>
-
   </ion-list>
   <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
     <ion-infinite-scroll-content

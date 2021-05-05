@@ -1,20 +1,15 @@
 <ion-content>
   <ion-list>
-
     <ion-item>
       <ion-back-button text='' defaultHref="sites"  class="ion-padding-end"></ion-back-button>
-
       <ion-avatar>
         <img [src]="images[0]">
       </ion-avatar>
-
       <ion-label text-wrap class="ion-padding-start">
         <h3>{{ information.title }}</h3>
         {{ address.zipCode}}, {{ address.city}}, {{ address.street}}, {{ address.country}}, {{ address.state}}
       </ion-label>
-
     </ion-item>
-
   </ion-list>
   <ion-img [src]="images[0]" class="image"></ion-img>
   <ion-list class="ion-padding-top" lines="none">
@@ -37,7 +32,5 @@
       <ion-icon name="location-outline"></ion-icon>
       <ion-label class="ion-padding-start">{{ address.zipCode}}</ion-label>
     </ion-item>
-
   </ion-list>
-
 </ion-content>

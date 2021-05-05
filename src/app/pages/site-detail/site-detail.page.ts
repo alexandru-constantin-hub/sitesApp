@@ -8,10 +8,14 @@ import { SiteService} from './../../services/site.service';
   templateUrl: './site-detail.page.html',
   styleUrls: ['./site-detail.page.scss'],
 })
+
 export class SiteDetailPage implements OnInit {
   information:any = [];
+  //extract from json and create separate array for addess
   address:any = [];
+  //extract from json and create separate array for images
   images:any = [];
+  //extract from json and create separate array for images
   contacts:any = [];
 
 
